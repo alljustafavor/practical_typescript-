@@ -58,5 +58,26 @@ orderStatus = 'delivered';
 let discount: number | string = 20;
 discount = '20%';
 
+// Arrays <3
+
+let prices: number[] = [100, 75, 42];
+// prices.push('hello')
+
+let fruit: string[] = ['apple', 'orange'];
+
+let array: (string | boolean)[] = ['apple', true, 'orange', false];
+
+// sections challenge
+
+let temperatures: number[] = [20, 25, 30];
+// temperatures.push('hot');
+
+let colors: string[] = ['red', 'green', 'blue'];
+/* colors.push(true); */
+
+/* let mixedArr: (number | string)[] = [true] */
+
+
+
 
 
