@@ -28,4 +28,35 @@ tax = 100;
 tax = '$1.00';
 
 let requestStatus: 'pending' | 'success' | 'error' = 'pending';
+requestStatus = 'error';
+
+let notSure: any = 4;
+notSure = 'maybe a string instead';
+notSure = false;
+
+let random; // no info to infer a type
+
+const books = ['1984', 'Brave New World', 'Fahrenheit 451'];
+
+let foundBook: string | undefined;
+
+for (let book of books) {
+  if (book === '1984') {
+    foundBook = book;
+    break
+  }
+}
+
+console.log(foundBook);
+
+// section challenge
+
+let orderStatus: 'processing' | 'shipped' | 'delivered' = 'processing';
+orderStatus = 'shipped';
+orderStatus = 'delivered';
+
+let discount: number | string = 20;
+discount = '20%';
+
+
 
