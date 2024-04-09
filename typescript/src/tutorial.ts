@@ -93,3 +93,29 @@ let items:{readonly title: string, cost?: number}[] = [book, pen, notebook];
 let bike: {brand: string, year: number} = {brand: 'yamaha', year: 2021}
 let laptop: {brand: string, year: number} = {brand: 'dell', year: 2024}
 
+// functions
+
+function sayHi(name:string) {
+  console.log(`Hello ${name.toUpperCase()}`)
+}
+sayHi('Joe')
+
+function calculateDiscount(price:number):number {
+  return price * 0.9;
+}
+const finalPrice = calculateDiscount(200);
+
+// section challenge
+let names: string[] = ['Joe', 'Austin', 'Chris', 'Jody'];
+
+function isRSVP(names: string[], search_value: string):boolean {
+  
+  for (let name of names) {
+    if (name.toLowerCase() === search_value.toLowerCase()) {
+      return true;
+    } 
+  }
+  return false;
+}
+
+console.log(isRSVP(names, "JODY"));
