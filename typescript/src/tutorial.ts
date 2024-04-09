@@ -36,11 +36,11 @@ notSure = false;
 
 let random; // no info to infer a type
 
-const books = ['1984', 'Brave New World', 'Fahrenheit 451'];
+const bookss = ['1984', 'Brave New World', 'Fahrenheit 451'];
 
 let foundBook: string | undefined;
 
-for (let book of books) {
+for (let book of bookss) {
   if (book === '1984') {
     foundBook = book;
     break
@@ -77,7 +77,19 @@ let colors: string[] = ['red', 'green', 'blue'];
 
 /* let mixedArr: (number | string)[] = [true] */
 
+// Objects
 
+let car:{brand: string, year: number} = { brand: 'toyota', year: 2020 };
 
+let book = {title: 'book', cost: 20};
+let pen = {title: 'pen', cost: 10};
+let notebook = {title: 'notebook'};
 
+let items:{readonly title: string, cost?: number}[] = [book, pen, notebook];
+// items[0].title = 'new book';
+
+// section challenge
+
+let bike: {brand: string, year: number} = {brand: 'yamaha', year: 2021}
+let laptop: {brand: string, year: number} = {brand: 'dell', year: 2024}
 
